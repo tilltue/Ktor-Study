@@ -1,11 +1,7 @@
-package com.example
+package com.ktorStudy.models
 
-import io.ktor.routing.*
 import io.ktor.http.*
-import io.ktor.application.*
-import io.ktor.response.*
-import io.ktor.request.*
-import com.example.plugins.*
+import ktorStudy.routes.configureRouting
 import kotlin.test.*
 import io.ktor.server.testing.*
 
