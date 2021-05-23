@@ -18,7 +18,7 @@ fun Application.registerAuthRoutes() {
             }
         }
         authenticate("auth-jwt") {
-            get("/") {
+            get("/auth") {
                 val principal = call.authentication.principal<JWTPrincipal>()
                 val subjectString = principal!!.payload.subject.removePrefix("auth0|")
                 call.respondText("Hello, $subjectString")

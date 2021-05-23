@@ -25,5 +25,9 @@ dependencies {
     implementation("io.ktor:ktor-serialization:$ktor_version")
     implementation("io.ktor:ktor-auth:$ktor_version")
     implementation("io.ktor:ktor-auth-jwt:$ktor_version")
+    // interactive website
+    implementation("io.ktor:ktor-html-builder:$ktor_version")
+    implementation("io.ktor:ktor-freemarker:$ktor_version")
+    // tests
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
